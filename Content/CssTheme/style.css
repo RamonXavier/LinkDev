@@ -11463,9 +11463,16 @@ h1, h2, h3, h4, h5,
     position: relative;
 }
 
-    #sidebar .h6 {
-        color: #fff;
+@media only screen and (max-width: 600px) {
+    #sidebar {
+         height: 148.7%;
+        position: absolute;
     }
+}
+
+#sidebar .h6 {
+    color: #fff;
+}
 
     #sidebar.active {
         margin-left: -300px;
@@ -11590,7 +11597,7 @@ h1, h2, h3, h4, h5,
 }
 
 #sidebar .custom-menu .btn.btn-primary {
-    background: #2f89fc;
+    background: #fba93b;
     border-color: transparent;
     position: relative;
     color: #000;
@@ -11673,13 +11680,13 @@ a[data-toggle="collapse"] {
 }
 
 .btn.btn-primary {
-    background: #2f89fc;
-    border-color: #2f89fc;
+    background: #fba93b;
+    border-color: #fba93b;
 }
 
     .btn.btn-primary:hover, .btn.btn-primary:focus {
-        background: #2f89fc !important;
-        border-color: #2f89fc !important;
+        background: #fba93b !important;
+        border-color: #fba93b !important;
     }
 
 .footer p {
