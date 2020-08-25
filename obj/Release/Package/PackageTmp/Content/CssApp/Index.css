@@ -1,0 +1,15 @@
+﻿.header {
+    padding: 100px;
+    text-align: center;
+    background: rgba(251, 165, 70, 07); 
+    color: white;
+}
+
+.center_text {
+    text-align: center;
+    padding-top: 10px;
+}
+
+.card_index {
+    padding: 50px;
+}

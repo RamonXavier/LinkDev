@@ -61,7 +61,8 @@ body {
     line-height: 1.5;
     color: #212529;
     text-align: left;
-    background-color: #DEDEDE!important;
+/*        background-color: red!important;*/
+/*    background-color: black!important;*/
 }
 
 [tabindex="-1"]:focus {
@@ -11468,12 +11469,16 @@ h1, h2, h3, h4, h5,
 }
 @media only screen and (max-width: 600px) {
     #sidebar {
-         height: 148.7%;
+        height: 148.7%;
         position: absolute;
-        z-index: 1;
+        z-index: 2;
     }
     .card {
         width: 100%!important;
+    }
+    .dropdown-backdrop {
+        position: absolute;
+        display: contents;
     }
 }
 
@@ -11659,6 +11664,8 @@ h1, h2, h3, h4, h5,
         font-size: 18px;
     }
 
+
+
 a[data-toggle="collapse"] {
     position: relative;
 }
@@ -11754,6 +11761,7 @@ a[data-toggle="collapse"] {
     background-color: #000000ed;
     height: 40px;
     font-weight: bolder;
+    color: white;
 }
 
 .font_Menu a{
@@ -11761,6 +11769,10 @@ a[data-toggle="collapse"] {
     font-size: 24px;
     line-height: 1.8;
     font-weight: bold;
+}
+
+.pt-4, .py-4 {
+    padding-top: 0rem!important;
 }
 
 #sidebar ul li > ul {
@@ -11771,3 +11783,7 @@ a[data-toggle="collapse"] {
 span.font_Menu {
         cursor: pointer;
     }
+
+.open > .dropdown-menu {
+    display: none;
+}

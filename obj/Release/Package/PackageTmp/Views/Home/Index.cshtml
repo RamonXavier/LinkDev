@@ -1,31 +1,86 @@
 ﻿@{
     ViewBag.Title = "Início Link Dev";
 }
+<link href="~/Content/CssApp/Index.css" rel="stylesheet" />
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<div class="header">
+    <h1>Ramon Xavier</h1>
+    <p>A <b>responsive</b> website created by me.</p>
 
-<div class="jumbotron">
-    <h1>ASP.NET</h1>
-    <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS and JavaScript.</p>
-    <p><a href="https://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
+    @for (int i = 0; i <= 4; i++)
+    {
+        <i class="fa fa-star fa-3" aria-hidden="true"></i>
+    }
+</div>
+<div class="">
+    <h2 class="card-title center_text">Special title treatment</h2>
+    <p class="card-text center_text">With supporting text below as a natural lead-in to additional content.</p>
 </div>
 
-<div class="row">
-    <div class="col-md-4">
-        <h2>Getting started</h2>
-        <p>
-            ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites that
-            enables a clean separation of concerns and gives you full control over markup
-            for enjoyable, agile development.
-        </p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301865">Learn more &raquo;</a></p>
+@*<div class="card" style="width: 18rem;">
+    <img class="card-img-top" src="https://image.freepik.com/vetores-gratis/monstrinho-roxo_44984-8.jpg" alt="Card image cap">
+    <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
     </div>
-    <div class="col-md-4">
-        <h2>Get more libraries</h2>
-        <p>NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.</p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301866">Learn more &raquo;</a></p>
+</div>*@
+
+<div id="demo" class="carousel slide" data-ride="carousel">
+
+    <!-- Indicators -->
+    @*<ul class="carousel-indicators">
+        <li data-target="#demo" data-slide-to="0" class="active"></li>
+        <li data-target="#demo" data-slide-to="1"></li>
+        <li data-target="#demo" data-slide-to="2"></li>
+    </ul>*@
+
+    <!-- The slideshow -->
+    <div class="carousel-inner">
+        <center>
+            <div class="col-md-12">
+                <div class="carousel-item active">
+                    <div class="col-md-12 card_index">
+                        <div class="card" style="width: 47%;">
+                            <img class="card-img-top" src="https://image.freepik.com/vetores-gratis/monstrinho-roxo_44984-8.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                @for (int cont = 0; cont <= 4; cont++)
+                {
+                    <div class="carousel-item">
+                        <div class="col-md-12 card_index">
+                            <div class="card" style="width: 47%;">
+                                <img class="card-img-top" src="https://image.freepik.com/vetores-gratis/monstrinho-roxo_44984-8.jpg" alt="Card image cap">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title @cont </h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                }
+            </div>
+        </center>
     </div>
-    <div class="col-md-4">
-        <h2>Web Hosting</h2>
-        <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
-    </div>
+
+    <!-- Left and right controls -->
+    <a class="carousel-control-prev" href="#demo" data-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+    </a>
+    <a class="carousel-control-next" href="#demo" data-slide="next">
+        <span class="carousel-control-next-icon"></span>
+    </a>
 </div>
+
+@section scripts{
+    <script>
+       
+    </script>
+}

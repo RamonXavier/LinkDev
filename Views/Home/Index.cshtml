@@ -3,84 +3,74 @@
 }
 <link href="~/Content/CssApp/Index.css" rel="stylesheet" />
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-<div class="header">
-    <h1>Ramon Xavier</h1>
-    <p>A <b>responsive</b> website created by me.</p>
+<div id="cont_index" class="style-1">
+    <div class="header">
+        <h1 class="white_font" style="white-space: nowrap" >Ramon Xavier</h1>
+        <hr/>
+        <h4><p>Um novo <b>modelo</b> de <code>profissionalismo.</code> </p></h4>
 
-    @for (int i = 0; i <= 4; i++)
-    {
-        <i class="fa fa-star fa-3" aria-hidden="true"></i>
-    }
-</div>
-<div class="">
-    <h2 class="card-title center_text">Special title treatment</h2>
-    <p class="card-text center_text">With supporting text below as a natural lead-in to additional content.</p>
-</div>
-
-@*<div class="card" style="width: 18rem;">
-    <img class="card-img-top" src="https://image.freepik.com/vetores-gratis/monstrinho-roxo_44984-8.jpg" alt="Card image cap">
-    <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        <a href="#" class="btn btn-primary">Go somewhere</a>
+        @for (int i = 0; i <= 4; i++)
+        {
+            <i class="fa fa-star fa-3" aria-hidden="true"></i>
+        }
     </div>
-</div>*@
-
-<div id="demo" class="carousel slide" data-ride="carousel">
-
-    <!-- Indicators -->
-    @*<ul class="carousel-indicators">
-        <li data-target="#demo" data-slide-to="0" class="active"></li>
-        <li data-target="#demo" data-slide-to="1"></li>
-        <li data-target="#demo" data-slide-to="2"></li>
-    </ul>*@
-
-    <!-- The slideshow -->
-    <div class="carousel-inner">
-        <center>
-            <div class="col-md-12">
-                <div class="carousel-item active">
-                    <div class="col-md-12 card_index">
-                        <div class="card" style="width: 47%;">
-                            <img class="card-img-top" src="https://image.freepik.com/vetores-gratis/monstrinho-roxo_44984-8.jpg" alt="Card image cap">
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                @for (int cont = 0; cont <= 4; cont++)
-                {
-                    <div class="carousel-item">
+    <div>
+        <h2 class="card-title center_text">Special title treatment</h2>
+        <p class="card-text center_text">With supporting text below as a natural lead-in to additional content.</p>
+    </div>
+    <div id="demo" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+            <center>
+                <div class="col-md-12">
+                    <div class="carousel-item active">
                         <div class="col-md-12 card_index">
-                            <div class="card" style="width: 47%;">
+                            <div class="card" style="width: 37%;">
                                 <img class="card-img-top" src="https://image.freepik.com/vetores-gratis/monstrinho-roxo_44984-8.jpg" alt="Card image cap">
                                 <div class="card-body">
-                                    <h5 class="card-title">Card title @cont </h5>
+                                    <h5 class="card-title">Card title</h5>
                                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                                     <a href="#" class="btn btn-primary">Go somewhere</a>
                                 </div>
                             </div>
                         </div>
                     </div>
-                }
-            </div>
-        </center>
+                    @for (int cont = 0; cont <= 4; cont++)
+                    {
+                        <div class="carousel-item">
+                            <div class="col-md-12 card_index">
+                                <div class="card" style="width: 37%;">
+                                    <img class="card-img-top" src="https://image.freepik.com/vetores-gratis/monstrinho-roxo_44984-8.jpg" alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title @cont </h5>
+                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    }
+                </div>
+            </center>
+        </div>
+        <a class="carousel-control-prev" href="#demo" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#demo" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </a>
     </div>
-
-    <!-- Left and right controls -->
-    <a class="carousel-control-prev" href="#demo" data-slide="prev">
-        <span class="carousel-control-prev-icon"></span>
-    </a>
-    <a class="carousel-control-next" href="#demo" data-slide="next">
-        <span class="carousel-control-next-icon"></span>
-    </a>
+    <hr style="background-color: white" />
+    <div>
+        <section class="text-center">
+            <h1 class="white_font">Experiências Profissionais:</h1>
+            <p>
+                use <code>.text-center</code>. for display:inline elements
+            </p>
+        </section>
+    </div>
 </div>
-
 @section scripts{
     <script>
-       
+
     </script>
 }

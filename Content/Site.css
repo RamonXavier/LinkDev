@@ -32,3 +32,10 @@ textarea {
     right: 1!important;
     margin-left: 50%!important;
 }
+
+.user-logo {
+    background-image: url(https://cdn.suwalls.com/wallpapers/abstract/colored-drops-16986-1920x1200.jpg) !important;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}

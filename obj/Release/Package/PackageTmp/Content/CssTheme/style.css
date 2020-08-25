@@ -3439,7 +3439,7 @@ input[type="button"].btn-block {
 
     .dropdown-toggle::after {
         display: inline-block;
-        margin-left: 0.255em;
+        margin-left: 4%!important;
         vertical-align: 0.255em;
         content: "";
         border-top: 0.3em solid;
@@ -11463,9 +11463,24 @@ h1, h2, h3, h4, h5,
     position: relative;
 }
 
-    #sidebar .h6 {
-        color: #fff;
+.carousel {
+    display: block
+}
+@media only screen and (max-width: 600px) {
+    #sidebar {
+         height: 148.7%;
+        position: absolute;
+        z-index: 1;
     }
+    .card {
+        width: 100%!important;
+    }
+}
+
+
+#sidebar .h6 {
+    color: #fff;
+}
 
     #sidebar.active {
         margin-left: -300px;
@@ -11673,8 +11688,8 @@ a[data-toggle="collapse"] {
 }
 
 .btn.btn-primary {
-    background: #2f89fc;
-    border-color: #2f89fc;
+    background: #fba93b;
+    border-color: #fba93b;
 }
 
     .btn.btn-primary:hover, .btn.btn-primary:focus {

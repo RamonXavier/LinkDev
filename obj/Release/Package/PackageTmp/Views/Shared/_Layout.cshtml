@@ -8,105 +8,139 @@
     @Scripts.Render("~/bundles/modernizr")
 </head>
 <body>
-<div class="wrapper d-flex align-items-stretch">
-    <nav id="sidebar">
-        <div class="custom-menu">
-            <button type="button" id="sidebarCollapse" class="btn btn-primary">
-            </button>
-        </div>
-        <div class="img bg-wrap text-center py-4 user_bg_img">
-            <div class="user-logo">
-                <div class="img icon_person">
-                </div>
-                <h3>Ramon Xavier</h3>
+    <div class="wrapper d-flex align-items-stretch">
+        <nav id="sidebar">
+            <div class="custom-menu">
+                <button type="button" id="sidebarCollapse" class="btn btn-primary">
+                </button>
             </div>
+            <div class="img bg-wrap text-center py-4 user_bg_img">
+                <div class="user-logo">
+                    <div class="img icon_person">
+                    </div>
+                    <h3>Ramon Xavier</h3>
+                </div>
+            </div>
+            <ul class="list-unstyled components mb-5">
+                <li class="active">
+                    <a href="@Url.Action("Index", "Home")">
+                        <i class="fa fa-home"></i>
+                        &nbsp;
+                        <span class="font_Menu">Início</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="@Url.Action("Index", "Home")">
+                        <span class="fa fa-keyboard-o mr-3 notif">
+                            <small class="d-flex align-items-center justify-content-center">5</small>
+                        </span>
+                        <span class="font_Menu">Posts</span>
+                    </a>
+                </li>
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown">
+                        <i class="fa fa-quote-right"></i>
+                        &nbsp;
+                        <span class="font_Menu">Totoriais</span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a href="@Url.Action("Index", "Home")">
+                                <i class="fa fa-plus"></i>
+                                &nbsp;
+                                <span class="font_Menu">C# - CSharp</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="@Url.Action("Index", "Home")">
+                                <i class="fa fa-plus"></i>
+                                &nbsp;
+                                <span class="font_Menu">JS - JavaScrip</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="@Url.Action("Index", "Home")">
+                                <i class="fa fa-plus"></i>
+                                &nbsp;
+                                <span class="font_Menu">PHP</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="@Url.Action("Index", "Home")">
+                                <i class="fa fa-plus"></i>
+                                &nbsp;
+                                <span class="font_Menu">Bootstrap</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown">
+                        <i class="fa fa-trophy"></i>
+                        &nbsp;
+                        <span class="font_Menu">Caça Talentos</span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a href="@Url.Action("Cadastro", "Talentos")">
+                                <i class="fa fa-plus"></i>
+                                &nbsp;
+                                <span class="font_Menu">Me tornar um talento</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="@Url.Action("CacaTalentos", "Talentos")">
+                                <i class="fa fa-plus"></i>
+                                &nbsp;
+                                <span class="font_Menu">Encontrar Talentos</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa fa-star-half-o"></i>
+                        &nbsp;
+                        <span class="font_Menu">Notícias Brasil</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa fa-support"></i>
+                        &nbsp;
+                        <span class="font_Menu">Notícias Global</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa fa-user"></i>
+                        &nbsp;
+                        <span class="font_Menu">Contato</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa fa-sign-out"></i>
+                        &nbsp;
+                        <span class="font_Menu">Sair </span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <div class="container body-content">
+            @RenderBody()
+            <hr />
         </div>
-        <ul class="list-unstyled components mb-5">
-            <li class="active">
-                <a href="@Url.Action("Index", "Home")" class="mr-3">
-                    <i class="fa fa-home"></i>
-                    &nbsp; 
-                    <span class="font_Menu">Início</span>
-                </a>
-            </li>
-            <li>
-                <a href="@Url.Action("Index", "Home")">
-                    <span class="fa fa-keyboard-o mr-3 notif">
-                        <small class="d-flex align-items-center justify-content-center">5</small>
-                    </span>
-                    <span class="font_Menu">Posts</span>
-                </a>
-            </li>
-            <li>
-                <a href="@Url.Action("Index", "Home")">
-                    <i class="fa fa-quote-right" ></i>
-                    &nbsp;
-                    <span class="font_Menu">Tutoriais</span>
-                </a>
-            </li>
-            <li class="dropdown">
-                <a class="dropdown-toggle" data-toggle="dropdown">
-                    <i class="fa fa-trophy"></i>
-                    <span class="font_Menu">Caça Talentos</span>
-                </a>
-                <ul class="dropdown-menu">
-                    <li>
-                        <a href="@Url.Action("Cadastro", "Talentos")">
-                            <i class="fa fa-plus"></i>
-                            &nbsp;
-                            <span class="font_Menu">Me tornar um talento</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="@Url.Action("CacaTalentos", "Talentos")">
-                            <i class="fa fa-plus"></i>
-                            &nbsp;
-                            <span class="font_Menu">Encontrar Talentos</span>
-                        </a>
-                    </li>
-                </ul>
-            </li>
-            <li>
-                <a href="#">
-                    <i class="fa fa-star-half-o"></i>
-                    &nbsp;
-                    <span class="font_Menu">Notícias Brasil</span>
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <i class="fa fa-support"></i>
-                    &nbsp;
-                    <span class="font_Menu">Notícias Global</span>
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <i class="fa fa-user"></i>
-                    &nbsp;
-                    <span class="font_Menu">Contato</span> 
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <i class="fa fa-sign-out"></i>
-                    &nbsp;
-                    <span class="font_Menu">Sair </span> 
-                </a>
-            </li>
-        </ul>
-    </nav>
-    <div class="container body-content">
-        @RenderBody()
-        <hr />
     </div>
-</div>
-<footer id="footer">
-    <div><center>&copy;@DateTime.Now.Year - Ramon Xavier Do Nascimento</center></div>
-</footer>
+    <footer id="footer">
+        <div><center>&copy;@DateTime.Now.Year - Ramon Xavier Do Nascimento</center></div>
+    </footer>
 
-@Scripts.Render("~/bundles/jquery")
-        @Scripts.Render("~/bundles/bootstrap")
-        @RenderSection("scripts", required: false)
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    @RenderSection("scripts", required: false)
 </body>
 </html>

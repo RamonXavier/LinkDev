@@ -209,6 +209,7 @@
     <Content Include="Content\CssTheme\bootstrap\_media.css" />
     <Content Include="Content\CssTheme\style.css" />
     <Content Include="Content\Images\bg_1.jpg" />
+    <Content Include="Content\Images\fundo.jpg" />
     <Content Include="Content\Images\logo.jpg" />
     <Content Include="Content\Images\user.png" />
     <Content Include="Content\Js\bootstrap.min.js" />
