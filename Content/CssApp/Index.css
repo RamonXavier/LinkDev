@@ -12,6 +12,11 @@
         padding: 100px;
     }
 
+    #tag_titulo {
+        font-size: 10px;
+        white-space: nowrap;
+    }
+
     .card {
         width: 100% !important;
     }
