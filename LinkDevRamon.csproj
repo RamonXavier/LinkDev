@@ -211,6 +211,7 @@
     <Content Include="Content\Images\bg_1.jpg" />
     <Content Include="Content\Images\fundo.jpg" />
     <Content Include="Content\Images\logo.jpg" />
+    <Content Include="Content\Images\projetos\imc_flutter.png" />
     <Content Include="Content\Images\user.png" />
     <Content Include="Content\Js\bootstrap.min.js" />
     <Content Include="Content\Js\jquery.min.js" />

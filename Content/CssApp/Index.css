@@ -71,3 +71,18 @@ div {
 .white_font {
     color: white !important;
 }
+
+#desc_div {
+    margin: auto;
+    width: 70%;
+}
+
+.desc_index {
+    font-size: 14px !important;
+}
+
+.hr_conteudo {
+    background-color: white;
+    width: 85%;
+    margin-top: 20px
+}
