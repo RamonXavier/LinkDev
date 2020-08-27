@@ -1,5 +1,5 @@
 ﻿<!DOCTYPE html>
-<html>
+<html class="style-1">
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -7,14 +7,14 @@
         "https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css")
     @Scripts.Render("~/bundles/modernizr")
 </head>
-<body>
-    <div class="wrapper d-flex align-items-stretch">
+<body class="style-1">
+    <div class="wrapper d-flex align-items-stretch style-1">
         <nav id="sidebar">
             <div class="custom-menu">
                 <button type="button" id="sidebarCollapse" class="btn btn-primary">
                 </button>
             </div>
-            <div class="img bg-wrap text-center py-4 user_bg_img">
+            <div class="img bg-wrap text-center user_bg_img">
                 <div class="user-logo">
                     <div class="img icon_person">
                     </div>
@@ -37,11 +37,11 @@
                         <span class="font_Menu">Posts</span>
                     </a>
                 </li>
-                <li class="dropdown">
-                    <a class="dropdown-toggle" data-toggle="dropdown">
+                <li class="">
+                    <a data-toggle="dropdown">
                         <i class="fa fa-quote-right"></i>
                         &nbsp;
-                        <span class="font_Menu">Totoriais</span>
+                        <span class="font_Menu">Totoriais &nbsp; <i class="fa fa-angle-down"></i></span>
                     </a>
                     <ul class="dropdown-menu">
                         <li>
@@ -74,11 +74,11 @@
                         </li>
                     </ul>
                 </li>
-                <li class="dropdown">
-                    <a class="dropdown-toggle" data-toggle="dropdown">
+                <li class="">
+                    <a  data-toggle="dropdown">
                         <i class="fa fa-trophy"></i>
                         &nbsp;
-                        <span class="font_Menu">Caça Talentos</span>
+                        <span class="font_Menu">Caça Talentos  &nbsp; <i class="fa fa-angle-down"></i></span>
                     </a>
                     <ul class="dropdown-menu">
                         <li>
@@ -127,13 +127,13 @@
                 </li>
             </ul>
         </nav>
-        <div class="container body-content">
+        <div class="container body-content style-1">
             @RenderBody()
             <hr />
         </div>
     </div>
     <footer id="footer">
-        <div><center>&copy;@DateTime.Now.Year - Ramon Xavier Do Nascimento</center></div>
+        <div style="background-color: black"><center  style="background-color: black">&copy;@DateTime.Now.Year - Ramon Xavier Do Nascimento</center></div>
     </footer>
 
     @Scripts.Render("~/bundles/jquery")
