@@ -3,4 +3,4 @@
 *.html linguist-detectable=false 
 *.js linguist-detectable=false 
 *.html linguist-detectable=false 
-LinkDev/Views/*.html linguist-detectable=false
+/Views/*.html linguist-detectable=false
