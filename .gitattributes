@@ -1,8 +1,10 @@
 
-*.cs linguist-detectable=true 
-*.html linguist-detectable=false 
-*.js linguist-detectable=false 
-*.html linguist-detectable=false 
-*.css linguist-detectable=false 
-/Content/*.css linguist-detectable=false 
+*.cs linguist-detectable=true
+*.html linguist-detectable=false
+*.js linguist-detectable=false
+*.html linguist-detectable=false
+*.css linguist-detectable=false
+*.scss linguist-detectable=false
+/Content/*.css linguist-detectable=false
+/Content/*.scss linguist-detectable=false
 /Views/*.html linguist-detectable=false
